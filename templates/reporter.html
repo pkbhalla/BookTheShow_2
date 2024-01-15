@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Entertainment Report</title>
+</head>
+
+<body>
+    <p>Hello {{ user_name }}, here is your </p>
+    <h1>Monthly Entertainment Report</h1>
+    <p>Have a look at your booked shows, their dates and their ratings.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Show Name</th>
+                <th>Show Date</th>
+                <th>Show Rating</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for entry in report_data %}
+            <tr>
+                <td>{{ entry.show_name }}</td>
+                <td>{{ entry.show_date }}</td>
+                <td>{{ entry.show_rating }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <p>Thank you for being our valuable customer.</p>
+    <p>Have a nice day.</p>
+</body>
+
+</html>
