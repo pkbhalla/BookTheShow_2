@@ -1,5 +1,5 @@
 # BookTheShow_2
-A web app for booking tickets of shows for users, and to create venues, shows inside venues for admins made using Flask Restful APIs, Vue js in frontend with Backend jobs using Celery.
+A web app for booking tickets of shows for users, and to create venues, shows inside venues for admins made using Flask Restful APIs in backend, Vue js in frontend with Backend jobs using Celery.
 
 ## Create virtual environment using the below command in terminal
 ```python -m venv virtual_environment_name```
